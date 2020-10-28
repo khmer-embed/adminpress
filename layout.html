@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Admin Press</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	</head>
+	<!--style left-bar and topbar -->
+	<style type="text/css">
+		.left-bar {
+			width: 15%;
+			height: 780px;
+			background-color: black;
+			color: white;
+		}
+		.left-bar ul li a:hover {
+				color: white;
+			border-radius: 2px;
+			border-left: 3px solid white;
+			background-color: crimson;
+			padding: 5px 30px;
+		}
+		.left-bar h6 {
+			text-align: left;
+			margin-left: 20px;
+			padding: 5px 0px;
+		}
+		.left-bar ul {
+			list-style-type: none;
+		}
+		.left-bar ul li a{
+			text-decoration: none;
+		}
+		.sidebar {
+			width: 85%;
+			height: 1200px;
+		}
+		nav ul li a {
+			color: red !important;
+			font-size: 20px !important;
+			font-weight: 600 !important;
+			color: white !important;
+			border-radius: 5px !important;
+			padding: 7px 12px !important;
+			margin: 0 5px;
+		}
+		nav ul li a.active , nav ul li a:hover{
+			background-color: white !important;
+			color: blue!important;
+		}
+		.f ul li a.active{
+			color: white;
+			border-radius: 2px;
+			border-left: 3px solid white;
+			background-color: crimson;
+			padding: 5px 30px;
+		}
+	<!--end style leftbar and topbar -->
+	</style>
+	<body>
+		<div style="display: flex;" >
+			<!--left-bar-->
+			<div class="left-bar">
+				<!--profile-->
+				<div style="padding: 10px 50px;">
+					<img src="assets/images/logo-light-icon.png">
+					<img src="assets/images/logo-light-text.png">
+				</div>
+				<div style="margin: 15px 100px">
+					<img src="assets/images/profile.png"style="border-radius: 50%;width: 100%;border:solid;border-color: white">
+				</div>
+				<div style="text-align: center;">
+					<h5>Markarn Doe</h5>
+				</div>
+				<hr style="background-color: red">
+				<!--end profile-->
+				<h6>PERSONAL</h6>
+				<div class="d">
+					<ul>
+						<label style="color: grey">Dashboard</label>
+						<li><a href="index.html" >Minimal</a></li>
+						<li><a href="#">Analytical</a></li>
+						<li><a href="#">Demographical</a></li>
+						<li><a href="#">Modern</a></li>
+					</ul>
+				</div>
+				<h6>PERSONAL</h6>
+				<div class="p">
+					<ul>
+						<label style="color: grey">Inbox</label>
+						<li><a href="mailbox.html">Mailbox</a></li>
+						<li><a href="detail.html">Mailbox Detail</a></li>
+						<li><a href="compose.html">Compose</a></li>
+					</ul>
+				</div>
+				<h6>FORMS. TABLE & WIDGETS</h6>
+				<div class="f">
+					<ul>
+						<label style="color: grey">Forms</label>
+						<li><a href="#"> Basic Forms</a></li>
+						<li><a href="layout.html" class="active"> Form Layouts</a></li>
+						<li><a href="#"> Form Addons</a></li>
+					</ul>
+				</div>
+			</div >
+			<!--end left-bar-->
+			<!--topbar -->
+			<div class="sidebar">
+				<nav class="navbar navbar-expand-lg navbar-light" style="background-color: orange;">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item active mtli">
+								<a class="nav-link" href="index.html" >Home <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">New</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="compose.html">Message</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Change icon</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<!--topbar -->
+				<!--row title-->
+				<div class="row">
+					<div class="col-md-5 mt-4" style="padding: 5px 30px;color: blue;">
+						<h3>Form layout</h3>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="control-label">First Name</label>
+								<input type="text"class="form-control" placeholder="John doe">
+							<small class="form-control-feedback"> This is inline help </small> </div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="control-label">Last Name</label>
+								<input type="text"class="form-control" placeholder="12n">
+							<small class="form-control-feedback"> This is inline help. </small> </div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group has-success">
+								<label class="control-label">Gender</label>
+								<select class="form-control custom-select">
+									<option value="">Male</option>
+									<option value="">Female</option>
+								</select>
+							<small class="form-control-feedback"> Select your gender </small> </div>
+						</div>
+						<!--/span-->
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="control-label">Date of Birth</label>
+								<input type="date" class="form-control" placeholder="dd/mm/yyyy">
+							</div>
+						</div>
+						<!--/span-->
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="control-label">Category</label>
+								<select class="form-control custom-select" data-placeholder="Choose a Category" tabindex="1">
+									<option value="Category 1">Category 1</option>
+									<option value="Category 2">Category 2</option>
+									<option value="Category 3">Category 5</option>
+									<option value="Category 4">Category 4</option>
+								</select>
+							</div>
+						</div>
+						<!--/span-->
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="control-label">Membership</label>
+								<div class="m-b-10">
+									<label class="custom-control custom-radio">
+										<input name="radio" type="radio" class="custom-control-input">
+										<span class="custom-control-label">Free</span>
+									</label>
+									<label class="custom-control custom-radio">
+										<input id="radio2" name="radio" type="radio" class="custom-control-input">
+										<span class="custom-control-label">Paid</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<!--/span-->
+					</div>
+					<div>
+						<button class="btn btn-success">Save</button>
+						<button class="btn btn-danger">Cancel</button>
+					</div>
+				</div>
+				<!--End Dashboard -->
+				<br><br>
+				<!--footer -->
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<div>
+				<footer class="footer"style="background-color: #e6e6e6;padding: 10px 20px"> © 2017 Admin Press Admin by themedesigner.in </footer>
+			</div>
+		</div>
+		<script type="text/javascript" src="assets/js/jquery-3.5.1.min.js"></script>
+		<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	</body>
+</html>
